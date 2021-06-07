@@ -7,6 +7,8 @@ int main(void){
     int count=0;
     scanf("%d",&n);
     scanf("%d",&m);
+    printf("n=%d",n);
+    printf("m=%d",m);
     char garden[n][m];
     for (int i=0; i<=n-1; i++){
         for (int j=0; j<=m-1; j++){
@@ -14,9 +16,16 @@ int main(void){
         }
     }
 
+    for (int b=0; b<=m-1; b++){
+        for(int a=0; a<=n-1; a++){
+            printf("%c",garden[a][b]);
+        }
+        printf("\n");
+    }
+
     void search(int x,int y){
         int dx,dy;
-        garden[x][y]=".";
+        *garden[x][y]='.';
         for (int r=-1; r<=1; r++){
             dx=x+r;
             for (int s =-1; s<=1; s++){

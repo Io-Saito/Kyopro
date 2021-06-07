@@ -1,3 +1,4 @@
+#%%
 #蟻本演習2-1 rake counting
 '''
 入出力規則
@@ -44,3 +45,5 @@ for xx in range(0,n-1):
             count+=1
 
 print(count)
+
+# %%
